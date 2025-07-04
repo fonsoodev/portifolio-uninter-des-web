@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+/*Esse css ficou muito grande, acredito que não tenha necessidade de comentar cada coisa, mas resumindo, estilizei por classes, todas as páginas depois do index.html, aqui tem a estilização das seguites páginas: Sobre mim, Skills, Projetos, Contato.*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1f242d;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 35px;
+}
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color:#7cf03d ;
+}
+
+
+.sobre-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #aafff1;
+}
+.sobre-info h1{
+    font-size: 30px;
+}
+.sobre-info img {
+    max-width: 400px;
+}
+
+.info p {
+    font-size: 18px;
+    width: 500px;
+    text-align:start ;
+}
+
+
+
+.skills-info {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #feffd2;
+}
+
+.skills-info img {
+    max-width: 500px;
+}
+
+.skills-info .sci-skills a {
+    display: contents;
+    font-size: 50px;
+    gap: 10px;
+
+
+
+}
+
+.skills-info p {
+    text-align: start;
+    font-size: 20px;
+    max-width: 1000px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sci-skills p{
+text-align: left;
+}
+.sci-skills a {
+   color: #feffd2;
+}
+
+
+.contato-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+
+.contato-info img {
+    max-width: 450px;
+}
+
+.contato-info h1 {
+    text-align: center;
+}
+
+.contato-info p {
+    font-size: 20px;
+    max-width: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    background-color: #12141a;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.form-group input,
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background-color: #233142;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.botao-enviar {
+    width: 100px;
+    font-size: 16px;
+    background-color: #1f242d;
+    color: #fff;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.botao-enviar:hover {
+    width: 100px;
+    font-size: 16px;
+    background-color: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.navbar-projetos {
+    background-color: #1f242db6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar-projetos .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-projetos ul {
+    display: flex;
+}
+.navbar-projetos ul li{
+    list-style: none;
+    margin-right: 35px;
+}
+.navbar-projetos ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+
+}
+
+.navbar-projetos ul li:hover a,
+.navbar-projetos ul li.active a {
+    color:#7cf03d ;
+}
+
+.projetos-info {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+
+.projetos-info h1, p {
+    text-align: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 40px;
+  height: auto;
+}
+
+.todo-list {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  min-width: 400px;
+  min-height: 300px;
+  border: 3px solid #f0e43d;
+  border-radius: 20px;
+  box-shadow: 3px 5px 1px #000000;
+}
+
+.title {
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  font-size: 1.5rem;
+  font-family: "BioRhyme", serif;
+  color: #F6F1D1;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-input,
+.form-button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.form-input {
+  outline: none;
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.form-button {
+  border: 1px;
+  background: #F6F1D1;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  border-radius: 10px;
+  
+}
+
+.form-button:hover {
+  color: #F6F1D1;
+  background: rgba(246, 241, 209, 0.1);
+  border-radius: 10px;
+}
+
+
+
+.todo-list {
+  padding: 1rem;
+  min-width: 400px;
+  min-height: 300px;
+  
+}
+
+.title {
+    text-align: center;
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif, serif;
+  color: #F6F1D1;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  
+}
+.form-input, .form-button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 10px;
+}
+.form-input {
+  outline: none;
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.form-button {
+  border: 1px;
+  background: #F6F1D1;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+.form-button:hover {
+  color: #F6F1D1;
+  background: rgba(246, 241, 209, 0.1);
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+color: #F6F1D1;
+display: flex;
+justify-content: space-between;
+margin-bottom: 0.5rem;
+padding: 1rem 3rem;
+border-radius: 10px;
+}
+
+.check-button, .delete-button {
+
+  background-color: #F6F1D1;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.task.done .check-button {
+  background-color: #46494C;
+  color: #F6F1D1;
+}
+
+.check-icon {
+  display: block;
+  padding: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.task.done .check-icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 0;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+.img-project {
+    display: flex;
+    justify-content: center;
+    margin: -90px;
+}
+.img-project img {
+    width: auto;
+    height: 600px;
+}
+
